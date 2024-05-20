@@ -1,7 +1,7 @@
 
------- * Nitrous priv_9 Menu * ------
+------ * discord.gg/enore UI * ------
 --[[
-    # Rewriten by: Nitrous
+    # Rewriten by: lean4me
 ]]
 
 repeat
@@ -9,8 +9,8 @@ repeat
  until game:IsLoaded()
 
 -- Menu/UI Creation
-if not isfile("enore") then
-    makefolder("enore")
+if not isfile("enore.wtf") then
+    makefolder("enore.wtf")
  end
  
  local menu = game:GetObjects("rbxassetid://17557527229")[1] 
