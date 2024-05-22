@@ -1,9 +1,3 @@
-
------- * discord.gg/enore * ------
---[[
-    # Rewriten by: lean4me
-]]
-
 repeat
     task.wait()
  until game:IsLoaded()
