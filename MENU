@@ -1,3 +1,8 @@
+------ * discord.gg/enore * ------
+--[[
+    # Rewriten by: cframe
+]]
+
 repeat
     task.wait()
  until game:IsLoaded()
