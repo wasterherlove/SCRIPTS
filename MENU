@@ -6,7 +6,7 @@ local localPlayer    = players.LocalPlayer
 local mouse          = localPlayer:GetMouse()
 
 local library = {
-    cheatname = "enore.pub | Lite | Efials UI";
+    cheatname = "enore.wtf | Lite | Efials UI";
     colorpicking = false;
     tabbuttons = {};
     tabs = {};
@@ -15,7 +15,7 @@ local library = {
     scrolling = false;
     multiZindex = 200;
     toInvis = {};
-    libColor = Color3.fromRGB(90, 97, 255);
+    libColor = Color3.fromRGB(64, 255, 21);
     disabledcolor = Color3.fromRGB(233, 0, 0);
     blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}
 }
@@ -103,8 +103,8 @@ function library:addTab(name)
         for i,v in next, library.tabbuttons do
             local state = v == newButton
             if state then
-                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(90, 97, 255)})
-                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(90, 97, 255)})
+                library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(64, 255, 21)})
+                library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(64, 255, 21)})
             else
                 library:Tween(v.element, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)})
                 library:Tween(v.text, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 255)})
@@ -1718,8 +1718,8 @@ function library:refreshConfigs()
 end
 
 function library:deleteConfig()
-    if isfile("enore.wtf/"..library.flags["selected_config"]..".cfg") then
-        delfile("enore.wtf/"..library.flags["selected_config"]..".cfg")
+    if isfile("OsirisCFGS/"..library.flags["selected_config"]..".cfg") then
+        delfile("OsirisCFGS/"..library.flags["selected_config"]..".cfg")
         library:refreshConfigs()
     end
 end
